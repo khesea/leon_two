@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LEON</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href = "fonts/unisans/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link rel="shortcut icon" href="https://ru.odvme.com/uploads/posts/2022-10/leonbet.webp">
+  </head>
+  <body>
+    <div class="popup" id="popup">
+        <div class="popup_win">
+          <img src="style/images/popup_win.png">
+          <div class="popup_text">
+            <span class="popup_header">Ganaste!</span>
+          <br><span class="popup__text">Te espera un bono<br>de hasta S/.1,000!</span>
+          </div>
+          <button onclick="removePopup()" class="popup_button">Llevar</button>
+        </div>
+    </div>
+
+    <div class="popupLose" id="popupLose">
+        <div class="popup_lose">
+          <img src="style/images/popup_lose.png">
+          <button onclick="removePopupLose()" class="popupLose_button">GIRAR DE NUEVO</button>
+        </div>
+    </div>
+
+    <img src="style/images/leon.png" class="leon">
+    <div class="main">
+      <span class="header-text header">Gira la rueda y gana</span>
+      <span class="header-incline header">fantásticos premios</span>
+      <div class="container">
+        <button id="spin" onclick="Spin()"><img src="style/images/swap_button.png" width="100%" class="spinImage" draggable="false"></button>
+        <div class="fortune_wheel">
+          <div class="one" number='1'>
+            <span><span class="count_odd">2x sin</span><br><span class="text_odd1">ninguna</span><br><span class="text_odd2">ganancia</span></span>
+          </div>
+          <div class="two">
+            <span><span class="count_even">50</span><br><span class="text_even1">giros</span><br><span class="text_even2">gratis</span></span>
+          </div>
+          <div class="three">
+            <img src="style/images/lose.png" style="transform: rotate(-90deg)" width="55%">
+          </div>
+          <div class="four">
+            <span><span class="count_even">25</span><br><span class="text_even1">giros</span><br><span class="text_even2">gratis</span></span>
+          </div>
+          <div class="five">
+            <span><span class="count_odd">1000</span><br><span class="text_odd1">bono<br><span class="text_odd2">soles</span></span>
+          </div>
+          <div class="six">
+            <span><span class="count_odd" id="unique_count_odd">300</span><br><span id="unique_text_odd1">bono</span><br><span id="unique_text_odd2">soles</span></span>
+          </div>
+          <div class="seven">
+            <img src="style/images/lose.png" style="transform: rotate(-90deg)" width="55%">
+          </div>
+          <div class="eight">
+            <span><span class="count_even">25</span><br><span class="text_even1">giros</span><br><span class="text_even2">gratis</span></span>
+          </div>
+        </div>
+        <div class="circle"> </div>
+        <img src="style/images/border.png" class="activeBorder" draggable="false">
+      </div>
+      <button class="main_button" onclick="Spin()">girar la rueda</button>
+    </div>
+    <img src="style/images/girl1.png" class="girl1 desktop-image">
+    <img src="style/images/girl2.png" class="girl2 desktop-image">
+    <img src="style/images/rock1.png" class="rock1 desktop-image">
+    <img src="style/images/rock2.png" class="rock2 desktop-image">
+    <img src="style/images/rock3.png" class="rock3 desktop-image">
+    <img src="style/images/rock4.png" class="rock4 desktop-image">
+    <img src="style/images/rock5.png" class="rock5 desktop-image">
+    <img src="style/images/rock6.png" class="rock6 desktop-image">
+
+    <img src="style/images/girl1mobile.png" class="girl1mobile mobile-image">
+    <img src="style/images/girl2mobile.png" class="girl2mobile mobile-image">
+    <img src="style/images/rock1mobile.png" class="rock1mobile mobile-image">
+    <img src="style/images/rock2mobile.png" class="rock2mobile mobile-image">
+    <img src="style/images/rock3mobile.png" class="rock3mobile mobile-image">
+    <img src="style/images/rock4mobile.png" class="rock4mobile mobile-image">
+    <button class="mobile_button" onclick="Spin()">girar la rueda</button>
+    <script src="script/fortune_wheel.js"> </script>
+  </body>
+</html>
