@@ -531,7 +531,7 @@ body {
     height: 150px;
     display: block;
     position: absolute;
-    top: 140%;
+    top: 120%;
     background: linear-gradient(180deg, #FEED7C 0%, #FFC54B 100%);
     border: 2px solid #FFA645;
     border-radius: 80px;
